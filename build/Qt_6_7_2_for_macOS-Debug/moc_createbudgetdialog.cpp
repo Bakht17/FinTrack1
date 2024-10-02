@@ -7,14 +7,13 @@
 *****************************************************************************/
 
 #include <QtCore/qmetatype.h>
-#include <QtGui/qtextcursor.h>
-#include "../../createbudgetdialog.h"
-
 #include <QtCore/qtmochelpers.h>
+#include <QtCore/qxptype_traits.h>
+#include <QtGui/qtextcursor.h>
 
 #include <memory>
 
-#include <QtCore/qxptype_traits.h>
+#include "../../createbudgetdialog.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'createbudgetdialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
