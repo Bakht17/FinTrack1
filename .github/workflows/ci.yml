@@ -1,0 +1,29 @@
+name: Code Style Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install clang-format
+        run: sudo apt-get update && sudo apt-get install -y clang-format
+
+      - name: Format code with clang-format
+        run: |
+          find . -name '*.cpp' -o -name '*.h' | xargs clang-format -i
+
+      - name: Check for uncommitted changes (code style violations)
+        run: |
+          git diff --exit-code
