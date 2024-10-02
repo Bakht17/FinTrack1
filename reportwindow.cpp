@@ -1,4 +1,5 @@
 #include "reportwindow.h"
+
 #include <QBarCategoryAxis>
 #include <QBarSeries>
 #include <QBarSet>
@@ -8,6 +9,7 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QVector>
+
 #include "ui_reportwindow.h"
 
 ReportWindow::ReportWindow(QWidget *parent) : QDialog(parent), ui(new Ui::ReportWindow) { ui->setupUi(this); }
