@@ -1,8 +1,10 @@
 #include "homewindow.h"
+
 #include <QDir>
 #include <QMessageBox>
 #include <QSqlError>
 #include <QSqlQuery>
+
 #include "ui_homewindow.h"
 
 HomeWindow::HomeWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::HomeWindow) {
