@@ -1,8 +1,10 @@
 #include "addtransactiondialog.h"
+
 #include <QFormLayout>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
+
 #include "ui_addtransactiondialog.h"
 
 AddTransactionDialog::AddTransactionDialog(QWidget *parent, const QString &transactionType)
