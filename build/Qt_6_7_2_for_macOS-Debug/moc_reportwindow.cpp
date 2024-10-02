@@ -7,13 +7,12 @@
 *****************************************************************************/
 
 #include <QtCore/qmetatype.h>
-#include "../../reportwindow.h"
-
 #include <QtCore/qtmochelpers.h>
+#include <QtCore/qxptype_traits.h>
 
 #include <memory>
 
-#include <QtCore/qxptype_traits.h>
+#include "../../reportwindow.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'reportwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
