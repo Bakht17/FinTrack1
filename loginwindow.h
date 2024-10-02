@@ -2,9 +2,11 @@
 #define LOGINWINDOW_H
 
 #include <createbudgetdialog.h>
+
 #include <QMainWindow>
 #include <QSqlError>
 #include <QSqlQuery>
+
 #include "addtransactiondialog.h"
 #include "filterdialog.h"
 #include "reportwindow.h"
