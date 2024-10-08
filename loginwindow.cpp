@@ -1,5 +1,6 @@
 #include "loginwindow.h"
 
+#include <QDebug>
 #include <QListWidget>
 #include <QMessageBox>
 
