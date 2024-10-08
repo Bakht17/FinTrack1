@@ -27,6 +27,8 @@ class HomeWindow : public QMainWindow {
     Ui::HomeWindow *ui;
     QSqlDatabase db;
     LoginWindow *loginWindow = nullptr;
+
+   public:
     bool connectToDatabase();
 };
 
