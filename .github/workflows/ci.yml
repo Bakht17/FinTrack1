@@ -38,7 +38,7 @@ jobs:
       - name: Set up Qt
         uses: jurplel/install-qt-action@v2
         with:
-          version: '5.15.2'
+          version: '6.7.2'
           host: linux
           target: desktop
           modules: qtcharts
