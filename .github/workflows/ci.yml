@@ -1,4 +1,4 @@
-name: Code Style Check
+name: CI Pipeline
 
 on:
   push:
@@ -27,3 +27,27 @@ jobs:
       - name: Check for uncommitted changes (code style violations)
         run: |
           git diff --exit-code
+
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Qt
+        uses: jurplel/install-qt-action@v2
+        with:
+          version: '5.15.2'
+          host: ubuntu-20.04
+
+      - name: Install dependencies
+        run: sudo apt-get install -y qtbase5-dev libsqlite3-dev
+
+      - name: Configure project
+        run: |
+          qmake
+          make
+
+      - name: Run tests
+        run: ./tests/transactionmanagertest
