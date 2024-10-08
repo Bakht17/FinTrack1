@@ -5,7 +5,7 @@
 class HomeWindowTest : public QObject {
     Q_OBJECT
 
-private slots:
+   private slots:
     void testDatabaseConnection() {
         HomeWindow window;
         QVERIFY(window.connectToDatabase());  // Проверяем, что подключение к БД успешно
