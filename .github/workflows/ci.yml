@@ -27,3 +27,28 @@ jobs:
       - name: Check for uncommitted changes (code style violations)
         run: |
           git diff --exit-code
+
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Qt and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qtbase5-dev qt5-qmake qtchooser qtdeclarative5-dev qt5-default
+
+      - name: Configure project with qmake
+        run: |
+          qmake FinTrack.pro
+
+      - name: Build project
+        run: |
+          make
+
+      - name: Run tests
+        run: |
+          ./tests/tst_homewindow
