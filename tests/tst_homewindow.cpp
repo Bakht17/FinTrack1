@@ -19,4 +19,4 @@ class HomeWindowTest : public QObject {
 };
 
 QTEST_MAIN(HomeWindowTest)
-#include "tst_homewindow.moc"
+// #include "tst_homewindow.moc"
