@@ -1,5 +1,3 @@
-QT += charts
-
 QT += sql
 
 QT       += core gui
