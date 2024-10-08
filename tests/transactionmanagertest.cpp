@@ -1,6 +1,6 @@
-#include "transactionmanager.h"
-
 #include <gtest/gtest.h>
+
+#include "transactionmanager.h"
 
 TEST(TransactionManagerTest, AddTransaction) {
     TransactionManager manager;
