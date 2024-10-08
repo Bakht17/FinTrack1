@@ -1,8 +1,8 @@
 #include "reportwindow.h"
 
 // #include <QBarCategoryAxis>
-#include <QBarSeries>
-#include <QBarSet>
+// #include <QBarSeries>
+// #include <QBarSet>
 // #include <QChart>
 // #include <QChartView>
 #include <QMessageBox>
@@ -44,11 +44,11 @@ void ReportWindow::generateReport(const QDate &startDate, const QDate &endDate) 
         amounts.append(query.value(1).toDouble());
     }
 
-    QBarSet *set = new QBarSet("Сумма");
-    for (double amount : amounts) { *set << amount; }
+    // QBarSet *set = new QBarSet("Сумма");
+    // for (double amount : amounts) { *set << amount; }
 
-    QBarSeries *series = new QBarSeries();
-    series->append(set);
+    // QBarSeries *series = new QBarSeries();
+    // series->append(set);
 
     // QChart *chart = new QChart();
     // chart->addSeries(series);
