@@ -1,10 +1,10 @@
 #include "reportwindow.h"
 
-#include <QBarCategoryAxis>
+//#include <QBarCategoryAxis>
 #include <QBarSeries>
 #include <QBarSet>
-#include <QChart>
-#include <QChartView>
+//#include <QChart>
+//#include <QChartView>
 #include <QMessageBox>
 #include <QSqlError>
 #include <QSqlQuery>
@@ -50,18 +50,18 @@ void ReportWindow::generateReport(const QDate &startDate, const QDate &endDate) 
     QBarSeries *series = new QBarSeries();
     series->append(set);
 
-    QChart *chart = new QChart();
-    chart->addSeries(series);
-    chart->setTitle("Отчет по категориям за выбранный период");
-    chart->setAnimationOptions(QChart::SeriesAnimations);
+    //QChart *chart = new QChart();
+    //chart->addSeries(series);
+    //chart->setTitle("Отчет по категориям за выбранный период");
+    //chart->setAnimationOptions(QChart::SeriesAnimations);
 
     QStringList categoriesList;
     for (const QString &category : categories) { categoriesList << category; }
-    chart->createDefaultAxes();
-    chart->setAxisX(new QBarCategoryAxis, series);
-    static_cast<QBarCategoryAxis *>(chart->axisX())->append(categoriesList);
+    //chart->createDefaultAxes();
+    //chart->setAxisX(new QBarCategoryAxis, series);
+    //static_cast<QBarCategoryAxis *>(chart->axisX())->append(categoriesList);
 
-    QChartView *chartView = new QChartView(chart);
-    chartView->setRenderHint(QPainter::Antialiasing);
+    //QChartView *chartView = new QChartView(chart);
+    //chartView->setRenderHint(QPainter::Antialiasing);
     ui->gridLayout->addWidget(chartView);
 }
