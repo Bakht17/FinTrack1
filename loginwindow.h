@@ -9,7 +9,6 @@
 
 #include "addtransactiondialog.h"
 #include "filterdialog.h"
-#include "reportwindow.h"
 
 namespace Ui {
 class LoginWindow;
