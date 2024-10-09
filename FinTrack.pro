@@ -21,24 +21,21 @@ SOURCES += \
     filterdialog.cpp \
     loginwindow.cpp \
     main.cpp \
-    homewindow.cpp \
-    reportwindow.cpp
+    homewindow.cpp
 
 HEADERS += \
     addtransactiondialog.h \
     createbudgetdialog.h \
     filterdialog.h \
     homewindow.h \
-    loginwindow.h \
-    reportwindow.h
+    loginwindow.h
 
 FORMS += \
     addtransactiondialog.ui \
     createbudgetdialog.ui \
     filterdialog.ui \
     homewindow.ui \
-    loginwindow.ui \
-    reportwindow.ui
+    loginwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
