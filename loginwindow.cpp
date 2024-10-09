@@ -185,8 +185,8 @@ void LoginWindow::on_createBudgetButton_clicked() {
 }
 
 void LoginWindow::on_viewReportsButton_clicked() {
-    ReportWindow *reportWindow = new ReportWindow(this);
-    reportWindow->show();
+    // ReportWindow *reportWindow = new ReportWindow(this);
+    // reportWindow->show();
 }
 
 void LoginWindow::loadTransactions() {
