@@ -3,8 +3,6 @@ QT += testlib
 SOURCES += \
     tests/tst_homewindow.cpp
 
-QT += charts
-
 QT += sql
 
 QT       += core gui
